@@ -1,0 +1,141 @@
+:root {
+    --limit-bar : 90%;
+    --bag-header : rgb(69, 69, 223);    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wreaper-header {   
+    background-color: var(--bag-header);
+    overflow: hidden;
+    width: 100%;
+}
+
+.header-limit {
+    width: var(--limit-bar);
+    margin: auto;
+}
+
+nav {   
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+
+.menu {
+    top: 0;
+    text-align: center;
+}
+
+.menu a {
+    margin-right :1.2rem;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    color: white;
+}
+
+.menu a:hover {
+    color: aqua ;
+}
+
+.logo-menu {
+    font-weight: bold;
+}
+
+.start-menu {
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.start-menu:hover {
+    border: 2px solid aqua;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    padding:25px 0 60px 0;
+    margin: 50px 0px 50px 0px;
+}
+
+.header-topic {
+    width: 45%;
+}
+
+.header-text-content {
+    font-size: 100px;
+    font-weight: lighter;
+    color: white;
+    margin: 25px 0px 25px;
+}
+
+.header-topic p {
+    color: white;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.btn-start {
+    margin: 25px 0px 25px 0px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-start:hover {
+    background-color: aqua;
+}
+
+.img-header {
+    width: 40%;
+    border-radius: 50px;
+}
+
+.info-text-header {
+    font-family: sans-serif;
+    opacity: 0.4;
+    color: white;
+}
+
+.ads-animation {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    animation: moveImage 10s linear infinite;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-40%);
+    }
+}
+
+.ads-animation img {
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
